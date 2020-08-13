@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/adminlte.css">
+    <link rel="stylesheet" href="css/calendar.css">
+
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index1.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </li>
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-danger elevation-4">
+            <!-- Brand Logo -->
+            <a href="index1.html" class="brand-link">
+                <img src="img/115757559_294917311852231_1422834661688136926_n-removebg-preview.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Admin Dashboard</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="img/2.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Natchanon Boonpeng</a>
+                    </div>
+                </div>
+
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="index1.html" class="nav-link">
+                                <i class="far fa-folder-open"></i>
+                                <p>
+                                    Home
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="profile.html" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>Log Out </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!--กราฟ GPA ของทุกเทอม-->
+                            <div class="card card-info">
+                                <div class="card-header">
+                                    <h3 class="card-title">เกรดการศึกษา</h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart">
+                                        <canvas id="areaChart"
+                                            style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!--กราฟใช้เวลาต่างๆในชีวิต-->
+                            <div class="card card-danger">
+                                <div class="card-header">
+                                    <h3 class="card-title">เวลาชีวิตในแต่ละวัน</h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="donutChart"
+                                        style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="card bg-gradient-success">
+                                <div class="card-header border-0">
+
+                                    <h3 class="card-title">
+                                        <i class="far fa-calendar-alt"></i>
+                                        Calendar
+                                    </h3>
+                                    <!-- tools card -->
+                                    <div class="card-tools">
+                                        <!-- button with a dropdown -->
+                                        <button type="button" class="btn btn-success btn-sm"
+                                            data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /. tools -->
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body pt-0">
+                                    <!--The calendar -->
+                                    <div class="calendar">
+                                        <div class="month">
+                                          <i class="fas fa-angle-left prev"></i>
+                                          <div class="date">
+                                            <h1></h1>
+                                            <p></p>
+                                          </div>
+                                          <i class="fas fa-angle-right next"></i>
+                                        </div>
+                                        <div class="weekdays">
+                                          <div>Sun</div>
+                                          <div>Mon</div>
+                                          <div>Tue</div>
+                                          <div>Wed</div>
+                                          <div>Thu</div>
+                                          <div>Fri</div>
+                                          <div>Sat</div>
+                                        </div>
+                                        <div class="days"></div>
+                                      </div>
+                                
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                                </section>
+                                <!-- right col -->
+                            </div>
+                            <!-- /.row (main row) -->
+                        </div><!-- /.container-fluid -->
+                        </section>
+                        <!-- /.content -->
+                    </div>
+
+
+                    <!--Timeline ประวัติการศึกษา-->
+
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+        <div class="footer">
+            <p></p>
+        </div>
+
+
+</body>
+<script src="js/calendar.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/adminlte.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+</script>
+<script>
+    var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
+    var areaChartData = {
+        labels: ['1/1', '1/2', '2/1', '2/2'],
+        datasets: [
+            {
+                label: 'Digital Goods',
+                backgroundColor: 'rgba(60,141,188,0.9)',
+                borderColor: 'rgba(60,141,188,0.8)',
+                pointRadius: false,
+                pointColor: '#3b8bba',
+                pointStrokeColor: 'rgba(60,141,188,1)',
+                pointHighlightFill: '#fff',
+                pointHighlightStroke: 'rgba(60,141,188,1)',
+                data: [3.66, 2.75, 3.05, 3.07]
+            }
+        ]
+    }
+
+    var areaChartOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+            display: false
+        },
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    display: false,
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    display: false,
+                }
+            }]
+        }
+    }
+    // This will get the first returned node in the jQuery collection.
+    var areaChart = new Chart(areaChartCanvas, {
+        type: 'line',
+        data: areaChartData,
+        options: areaChartOptions
+    })
+
+    var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+    var donutData = {
+        labels: [
+            'Sleep',
+            'Play',
+            'Study',
+            'Eat',
+        ],
+        datasets: [
+            {
+                data: [8, 4, 8, 4],
+                backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef'],
+            }
+        ]
+    }
+
+    var donutOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    var donutChart = new Chart(donutChartCanvas, {
+        type: 'doughnut',
+        data: donutData,
+        options: donutOptions
+    })
+
+</script>
+
+</html>
